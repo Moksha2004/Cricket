@@ -28,16 +28,16 @@ def cricgfg():
 		team2_name = team2_block.find('div', class_='scr_tm-nm').text
 		team2_score = team2_block.find('span', class_='scr_tm-run').text
 		result = [
-			{'<br>Description': description},
+			{'Description': description},
 			{'Location': location},
-			{"<br>Status": status},
-			{"\\n\\nCurrent": current},
-			{"<br>Team A": team1_name},
-			{"<br>Team A Score": team1_score},
-			{"<br>Team B": team2_name},
-			{"<br>Team B Score": team2_score,},
-			{"<br>Full Scoreboard": link,},
-			{"<br>Credits": "NDTV Sports"}
+			{"Status": status},
+			{"Current": current},
+			{"Team A": team1_name},
+			{"Team A Score": team1_score},
+			{"Team B": team2_name},
+			{"Team B Score": team2_score,},
+			{"Full Scoreboard": link,},
+			{"Credits": "NDTV Sports"}
         ]
 		#result='[{"Description":description,"Location":location,"Status:status,"Team A": team1_name,"Team A Score": team1_score,"Team B": team2_name,"Team B Score": team2_score,"Full Scoreboard": link,"Credits": "NDTV Sports","Current":current}]'
 		#data=json.loads(result)
